@@ -2,13 +2,12 @@
   "name": "vue-cmpt-cli",
   "version": "1.0.0",
   "description": "A simple CLI for scaffolding single vue component project",
-  "main": "index.js",
+  "main": "",
   "bin": {
     "vue-cmpt-cli": "bin/cli.js"
   },
   "scripts": {
-    "commit": "git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
