@@ -1,6 +1,6 @@
 {
   "name": "vue-cmpt-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple CLI for scaffolding single vue component project",
   "main": "",
   "bin": {
