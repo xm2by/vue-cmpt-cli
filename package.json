@@ -1,0 +1,62 @@
+{
+  "name": "vue-cmpt-cli",
+  "version": "1.0.0",
+  "description": "A simple CLI for scaffolding single vue component project",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xm2by/vue-cmpt-cli.git"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "cli",
+    "single-vue-component"
+  ],
+  "author": "xm2by <mxxumin@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xm2by/vue-cmpt-cli/issues"
+  },
+  "homepage": "https://github.com/xm2by/vue-cmpt-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "download-git-repo": "^2.0.0",
+    "inquirer": "^6.5.0",
+    "ora": "^3.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "babel-eslint": "^10.0.2",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
